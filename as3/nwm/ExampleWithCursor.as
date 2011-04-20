@@ -15,10 +15,10 @@
 		private var initObject : Object;
 		private static const VK_API_SECRET_SHORT:String = "AUe9i7fS5AeMbwIW7ZXu";
 		private static const VK_API_ID:Number = 2030957;
-        private static const SID:String = 'bca0e67e6c7a77c0f713bd9fa4468db92ce4c858830aebe1f60d8c83bcb60e';
+                private static const SID:String = 'bca0e67e6c7a77c0f713bd9fa4468db92ce4c858830aebe1f60d8c83bcb60e';
 		
 		private var nwm_clip:NWM;
-        private var flashVarsMock:Object;
+                private var flashVarsMock:Object;
 		
 		// Курсор
 		public var newCursor:Sprite = null;
@@ -93,7 +93,7 @@
 				country_name: "russia"
 			};
 			
-            if (!flashVarsMock) {
+                        if (!flashVarsMock) {
 
 				flashVarsMock = {
 					api_id : VK_API_ID,
