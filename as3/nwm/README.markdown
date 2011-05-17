@@ -92,11 +92,11 @@ Width И height желательно делать как размер вашег
 
 Можно отлавливать следующие события
 
-    nwm_clip.addEventListener(NWMEvent.FINISHED , function(e:Event) {});
-    nwm_clip.addEventListener(NWMEvent.SKIPPED , function(e:Event) {});
-    nwm_clip.addEventListener(NWMEvent.CLICKED , function(e:Event) {});
-    nwm_clip.addEventListener(NWMEvent.FAILED , function(e:Event) {});
-    nwm_clip.addEventListener(NWMEvent.SUCCESS , function(e:Event) {});
+    nwm_clip.addEventListener(NWMEvent.FINISHED , onFinished);
+    nwm_clip.addEventListener(NWMEvent.SKIPPED , onSkipped);
+    nwm_clip.addEventListener(NWMEvent.CLICKED , onClicked);
+    nwm_clip.addEventListener(NWMEvent.FAILED , onFailed);
+    nwm_clip.addEventListener(NWMEvent.SUCCESS , onSucces);
 
 Если не удалось запустить рекламу, то идет событие **NWMEvent.FAILED**, если релама запустилась, то **NWMEvent.SUCCESS**.
 Дальше два варианта развития событий: **NWMEvent.SKIPPED** или **NWMEvent.CLICKED**. 
@@ -126,4 +126,3 @@ Width И height желательно делать как размер вашег
 ## Дополнительные примеры:
 
 1. Использование своего курсора (ExampleCursor.as)
-
