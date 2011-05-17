@@ -90,7 +90,7 @@
 				country_name: "russia"
 			};
 			
-           	var NWMParametesMock:Object = {
+           	var NWMParameters:Object = {
 				width: 800,
 				height: 600,
 				flashVars: null,
@@ -104,7 +104,7 @@
 			};
 			
 			nwm_clip = new NWM();
-			NWM.instance().init(NWMParametesMock);
+			NWM.instance().init(NWMParameters);
 			removeCustomCursor();
 			addChild(nwm_clip);
 			

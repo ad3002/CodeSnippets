@@ -32,7 +32,7 @@ package
 				bdate: "1917-01-09"
 			}
 			
-			var NWMParametesMock:Object = {
+			var NWMParameters:Object = {
 				width: 800,
 				height: 600,
 				flashVars: null, // не передаем flashVars
@@ -46,7 +46,7 @@ package
 			};
 			
 			nwm_clip = new NWM();
-			NWM.instance().init(NWMParametesMock);
+			NWM.instance().init(NWMParameters);
 			addChild(nwm_clip);
 			
 			nwm_clip.addEventListener(NWMEvent.FINISHED , function(e:Event) {});
