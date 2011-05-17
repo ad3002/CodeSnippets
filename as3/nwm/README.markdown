@@ -14,31 +14,31 @@
 
 ## Порядок установки:
 
-1. Импортировать классы модуля
+Шаг раз. Импортировать классы модуля
 	
     import nwm.NWM;
     import nwm.NWMEvent;
 
-2. Для начала необходимо подготовить объект NWMParameters, которым инициализируется модуль (описание его параметров смотрите ниже, примеры в примерах)
+Шаг два. Для начала необходимо подготовить объект NWMParameters, которым инициализируется модуль (описание его параметров смотрите ниже, примеры в примерах)
 
-3. В функции инициализации приложения (Init), в прелоадере либо месте программы, где вы планируете инициализировать модуль, разместить код вызова PreRoll-a. 
+    var NWMParameters:Object = {
+        width: 800,
+        height: 600,
+        flashVars: null,
+        appIdNWM: 172483,
+        userParameters: userParameters,
+        skip_button: null,
+        callback : null,
+        social_network: null,
+        background_alpha: 0.7,
+        show_debugger: false
+    };
+
+
+шаг три. В функции инициализации приложения (Init), в прелоадере либо месте программы, где вы планируете инициализировать модуль, разместить код вызова PreRoll-a. 
 
 
 ## Параметры NWMParameters
-
-                        var NWMParameters:Object = {
-				width: 800,
-				height: 600,
-				flashVars: null, // не передаем flashVars
-				appIdNWM: 172483, // тестовый id
-				userParameters: userParameters, // зато передаем userParameters
-				skip_button: null,
-				callback : null,
-				social_network: null, // говорим, что НЕ хотим, чтобы модуль исользовал API
-				background_alpha: 0.7,
-				show_debugger: true
-			};
-
 
 Все параметры __обязательны__, если не указано обратное.
 
