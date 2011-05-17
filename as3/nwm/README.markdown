@@ -26,14 +26,28 @@
 
 ## Параметры NWMParameters
 
+                        var NWMParameters:Object = {
+				width: 800,
+				height: 600,
+				flashVars: null, // не передаем flashVars
+				appIdNWM: 172483, // тестовый id
+				userParameters: userParameters, // зато передаем userParameters
+				skip_button: null,
+				callback : null,
+				social_network: null, // говорим, что НЕ хотим, чтобы модуль исользовал API
+				background_alpha: 0.7,
+				show_debugger: true
+			};
+
+
 Все параметры __обязательны__, если не указано обратное.
 
-    **width** - ширина области показа рекламы
-    **height** - высота области показа рекламы
+**width** - ширина области показа рекламы
+**height** - высота области показа рекламы
 
 Width И height желательно делать как размер вашего приложения.
 
-    **flashVars** - flashVars или null
+**flashVars** - flashVars или null
 
 Нужно указывать вместе с social_network, если вы только хотите, чтобы модуль сам запрашивал информацию о пользователе.
 
